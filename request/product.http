@@ -1,0 +1,17 @@
+@api = http://localhost:4500/clientes
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre": "Juan Perez",
+    "email": "juan@gmail.com",
+    "saldo": 200
+}
+
+###
+GET {{api}}/1
+
